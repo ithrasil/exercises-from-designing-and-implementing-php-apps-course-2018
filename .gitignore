@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/symfony,windows,composer,phpstorm,jetbrains
 
 vendor/
+.idea/
 
 ### Symfony ###
 # Cache and logs (Symfony2)
