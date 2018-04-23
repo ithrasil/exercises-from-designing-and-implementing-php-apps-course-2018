@@ -2,9 +2,9 @@
 
 ## Php course by [Mariusz gil](https://github.com/mariuszgil/designing-and-implementing-php-apps-course) on Wrocław University.
 
-- [Basics](1-Basics),
-- [OOP I](2-OOP-I),
-- [OOP II](3-OOP-II),
+- [Basics](01-diamond-words),
+- [OOP I](02-money-value-object),
+- [OOP II](03-rest-api),
 - [HTTP Flow](4-Http-Flow)
 - [Templates](5-Templates)
 - [Unit Testing](6-Unit-Testing)
