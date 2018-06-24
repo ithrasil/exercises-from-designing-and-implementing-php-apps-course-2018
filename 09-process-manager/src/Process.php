@@ -45,6 +45,9 @@ class Process
                     }
                 }
             }
+            else {
+                throw new \RuntimeException();
+            }
 
         } else {
             throw new \RuntimeException();

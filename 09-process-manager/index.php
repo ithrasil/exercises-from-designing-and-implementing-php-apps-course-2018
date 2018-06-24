@@ -31,8 +31,8 @@ $event_name = $argv[1];
 unset($argv[1]);
 
 $argv = array_values($argv);
-
 $saved_process = $db->select("process", $argv[0]);
+
 
 $process = new Process($event_bus);
 $process->act($saved_process, $event_name, $argv);
