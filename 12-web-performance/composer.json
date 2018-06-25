@@ -1,0 +1,19 @@
+{
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "silex/silex": "^2.3",
+        "cache/redis-adapter": "^1.0",
+        "maciej-sz/nbp-php": "^0.2.1"
+    },
+    "scripts": {
+        "run": "php -S 192.168.99.1:8080 public/index.php",
+        "efficiency-test-1": "ab -n 100 -c http://localhost/nbp"
+    },
+    "require": {
+        "predis/predis": "^1.1"
+    }
+}
