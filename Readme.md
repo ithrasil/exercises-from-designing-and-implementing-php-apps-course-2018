@@ -1,3 +1,3 @@
 # php-course
 
-## Php course by [Mariusz gil](https://github.com/mariuszgil/designing-and-implementing-php-apps-course) on Wrocław University.
+ [Php course](https://github.com/mariuszgil/designing-and-implementing-php-apps-course) by Mariusz gil on Wrocław University.
