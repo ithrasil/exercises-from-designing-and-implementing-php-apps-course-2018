@@ -1,0 +1,35 @@
+Server Software:
+Server Hostname:        192.168.99.1
+Server Port:            8080
+
+Document Path:          /nbp?date=2018-05-25
+Document Length:        788 bytes
+
+Concurrency Level:      2
+Time taken for tests:   0.141 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      95500 bytes
+HTML transferred:       78800 bytes
+Requests per second:    711.42 [#/sec] (mean)
+Time per request:       2.811 [ms] (mean)
+Time per request:       1.406 [ms] (mean, across all concurrent requests)
+Transfer rate:          663.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       1
+Processing:     2    3   0.5      3       4
+Waiting:        1    2   0.4      2       4
+Total:          2    3   0.5      3       4
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      4
+  98%      4
+  99%      4
+ 100%      4 (longest request)

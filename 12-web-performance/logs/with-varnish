@@ -1,0 +1,36 @@
+Server Software:        Varnish
+Server Hostname:        192.168.99.100
+Server Port:            80
+
+Document Path:          /nbp?date=2018-05-25
+Document Length:        268 bytes
+
+Concurrency Level:      2
+Time taken for tests:   7.059 seconds
+Complete requests:      100
+Failed requests:        0
+Non-2xx responses:      100
+Total transferred:      51855 bytes
+HTML transferred:       26800 bytes
+Requests per second:    14.17 [#/sec] (mean)
+Time per request:       141.174 [ms] (mean)
+Time per request:       70.587 [ms] (mean, across all concurrent requests)
+Transfer rate:          7.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.4      0       1
+Processing:     0  106 600.5      1    3505
+Waiting:        0  106 600.4      0    3504
+Total:          0  106 600.5      1    3505
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      3
+  95%      5
+  98%   3504
+  99%   3505
+ 100%   3505 (longest request)

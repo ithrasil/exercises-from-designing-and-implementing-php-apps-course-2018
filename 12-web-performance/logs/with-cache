@@ -1,0 +1,65 @@
+Server Software:
+Server Hostname:        192.168.99.1
+Server Port:            8080
+
+Document Path:          /nbp?date=2018-05-25
+Document Length:        788 bytes
+
+Concurrency Level:      2
+Time taken for tests:   0.141 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      95500 bytes
+HTML transferred:       78800 bytes
+Requests per second:    711.42 [#/sec] (mean)
+Time per request:       2.811 [ms] (mean)
+Time per request:       1.406 [ms] (mean, across all concurrent requests)
+Transfer rate:          663.48 [Kbytes/sec] received
+
+
+C:\Users\Pablo\Desktop\php course\12-web-performance>composer run-script test
+> ab -n 100 -c 2 http://192.168.99.1:8080/nbp?date=2018-05-25&currency=USD
+'currency' is not recognized as an internal or external command,
+operable program or batch file.
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.99.1 (be patient).....done
+
+
+Server Software:
+Server Hostname:        192.168.99.1
+Server Port:            8080
+
+Document Path:          /nbp?date=2018-05-25
+Document Length:        788 bytes
+
+Concurrency Level:      2
+Time taken for tests:   0.138 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      95500 bytes
+HTML transferred:       78800 bytes
+Requests per second:    726.67 [#/sec] (mean)
+Time per request:       2.752 [ms] (mean)
+Time per request:       1.376 [ms] (mean, across all concurrent requests)
+Transfer rate:          677.71 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:     2    3   0.5      3       4
+Waiting:        1    2   0.4      2       3
+Total:          2    3   0.5      3       4
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      4
+  99%      4
+ 100%      4 (longest request)

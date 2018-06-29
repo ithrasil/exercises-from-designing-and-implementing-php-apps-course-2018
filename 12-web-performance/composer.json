@@ -1,19 +1,16 @@
 {
-    "autoload": {
-        "psr-4": {
-            "": "src/"
-        }
-    },
-    "require-dev": {
-        "silex/silex": "^2.3",
-        "cache/redis-adapter": "^1.0",
-        "maciej-sz/nbp-php": "^0.2.1"
-    },
-    "scripts": {
-        "run": "php -S 192.168.99.1:8080 public/index.php",
-        "efficiency-test-1": "ab -n 100 -c http://localhost/nbp"
-    },
-    "require": {
-        "predis/predis": "^1.1"
-    }
+  "require-dev": {
+    "silex/silex": "^2.3",
+    "maciej-sz/nbp-php": "^0.2.1"
+  },
+  "scripts": {
+    "run": "php -S 192.168.99.1:8080 web/server.php",
+    "run-with-cache": "php -S 192.168.99.1:8080 web/server-with-cache.php",
+    "test": "ab -n 100 -c 2 http://192.168.99.1:8080/nbp?date=2018-05-25&currency=USD",
+    "varnish-test": "ab -n 100 -c 2 http://192.168.99.100/nbp?date=2018-05-25&currency=USD"
+  },
+  "require": {
+    "predis/predis": "^1.1",
+    "cache/predis-adapter": "^1.0"
+  }
 }
