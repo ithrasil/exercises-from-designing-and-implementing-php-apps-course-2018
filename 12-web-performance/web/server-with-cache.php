@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 $app = new Silex\Application();
 
-$client = new \Predis\Client('tcp://192.168.99.100:32769');
+$client = new \Predis\Client('tcp://192.168.99.100:32778');
 $pool = new PredisCachePool($client);
 
 $app->get('/nbp', function (Request $req) use ($app, $pool) {
